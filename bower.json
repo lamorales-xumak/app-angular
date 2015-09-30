@@ -1,0 +1,27 @@
+{
+  "name": "app-angular-1",
+  "version": "1.0.0",
+  "description": "Proyecto Inicial para aplicaciones front end realizadas con html, css, angularjs, angular-material-design",
+  "authors": [
+    "TIO-gt"
+  ],
+  "license": "EULA",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "=1.4.4",
+    "angular-animate": "=1.4.4",
+    "angular-material": "=0.11",
+    "angular-material-icons": "=0.5.0",
+    "angular-messages": "=1.4.4",
+    "angular-resource": "=1.4.4",
+    "angular-route": "=1.4.4",
+    "angular-ui-grid": "=3.0.6",
+    "ng-focus-if": "=1.0.2"
+  }
+}
