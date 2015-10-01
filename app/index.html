@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" ng-app>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta content="initial-scale=1 maximum-scale=1 user-scalable=no" name="viewport"/>
@@ -15,51 +15,14 @@
   <body>
 
     <!-- Funcionalidad -->
-    <label for="texto1">Ingrese un texto</label>
-    <input name="texto1" type="text" ng-model="miTexto" />
-    <br />
-    Usted esta tecleando: {{ miTexto }}
-    <br />
-    <hr />
-    <label for="texto2">Ingrese una cadena</label>
-    <input id="texto2" name="texto2" type="text" ng-model="miCadena" />
-    <br />
-    Su cadena en mayuscula es: {{ miCadena | uppercase }}
-    <br />
-    Su cadena en minuscula es: {{ miCadena | lowercase }}
-    <br />
-    <hr />
-    <label for="cantidad">Ingrese una cantidad</label>
-    <input id="cantidad" name="cantidad" type="number" ng-model="miCantidad" />
-    <br />
-    Cantidad filtrada: {{ miCantidad||0 | currency : 'Q' : 2 }}
-    <br />
-    <hr />
-    <label for="mostrar">Mostrar imagen con ngIf</label>
-    <input name="mostrar" type="checkbox" ng-model="mostrarImg" />
-    <br />
-    <label for="ocultar">Ocultar imagen con ngHide</label>
-    <input name="ocultar" type="checkbox" ng-model="ocultarImg" />
-    <div ng-if="mostrarImg" ng-hide="ocultarImg">
-      <img ng-src="img/guatemala.png" />
-    </div>
-    <br />
-    <hr />
-    <p>Cursos disponibles de la Universidad Mariano Galvez</p>
-    <div ng-repeat="curso in ['Programacion I', 'Programacion 2', 'Fisica', 'Calculo', 'Matematica Discreta', 'Inteligencia Aritificial', 'Base de Datos I', 'Base de Datos II', 'Simulacion y Modelacion', 'Comunicaciones', 'Compiladores', 'Lenguajes Formales y Automatas'] | filter:miTexto | orderBy ">
-      [{{$index + 1}}] -- {{ curso }}
-    </div>
     <!-- Fin Funcionalidad -->
 
     <!-- build:js js/vendor.min.js -->
     <!-- bower:js -->
-    <script src="lib/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
-    <script src="/js/app.js"></script>
-    <script src="/js/main.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
   </body>
