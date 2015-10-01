@@ -1,5 +1,5 @@
 node_modules/
-app/lib/
+#app/lib/
 dist/
 app/js/templates.js
 *Thumbs.db
