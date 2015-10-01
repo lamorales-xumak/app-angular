@@ -26,18 +26,3 @@ bower install --verbose
 Si por alguna razon no se inyectan las liberias en index.html, pueden ejecutar la tarea de gulp siguiente.
 
 gulp dependencia
-
-Ahora ya podemos iniciar a ver la sintaxis angular y su funcionamiento.  Lo primero que hay que realizar para tener funcionando angular es agregar la siguiente directiva.
-
-ng-app
-
-Esta debe ir dentro del tag <head> de html, quedando de la siguiente manera
-
-<html lang="es">
-
-Probemos angular en funcionamiento
-ng-model
-{{}}
-
-
-Apliquemos filtro |
