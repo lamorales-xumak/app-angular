@@ -1,0 +1,5 @@
+node_modules/
+app/lib/
+dist/
+app/js/templates.js
+*Thumbs.db

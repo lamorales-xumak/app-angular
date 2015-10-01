@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-  <head  ng-app="InicialApp">
+<html lang="es" ng-app>
+  <head>
     <meta charset="UTF-8">
     <meta content="initial-scale=1 maximum-scale=1 user-scalable=no" name="viewport"/>
     <meta content="width=device-width height=device-height" name="size">
@@ -12,16 +12,41 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body ng-controller>
-    <input type="text" ng-model="texto" />
+  <body>
+
+    <!-- Funcionalidad -->
+    <label for="texto1">Ingrese un texto</label>
+    <input name="texto1" type="text" ng-model="miTexto" />
+    <br />
+    Usted esta tecleando: {{ miTexto }}
+    <br />
     <hr />
-    Texto tecleado en vivo es: {{texto}}
+    <label for="texto2">Ingrese una cadena</label>
+    <input id="texto2" name="texto2" type="text" ng-model="miCadena" />
+    <br />
+    Su cadena en mayuscula es: {{ miCadena | uppercase }}
+    <br />
+    Su cadena en minuscula es: {{ miCadena | lowercase }}
+    <br />
+    <hr />
+    <label for="cantidad">Ingrese una cantidad</label>
+    <input id="cantidad" name="cantidad" type="number" ng-model="miCantidad" />
+    <br />
+    Cantidad filtrada: {{ miCantidad||0 | currency : 'Q' : 2 }}
+    <br />
+    <hr />
+    <!-- Fin Funcionalidad -->
+
     <!-- build:js js/vendor.min.js -->
     <!-- bower:js -->
+    <script src="lib/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
+    <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/templates.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
   </body>

@@ -53,7 +53,7 @@ gulp.task('server-desarrollo-local', ['template', 'inyeccion', 'dependencia'], f
          },
          fallback: 'index.html',
          proxies: [{
-            source: recurso
+            source: recurso,
             target: serverLocal
          }],
          open: true
@@ -135,7 +135,7 @@ gulp.task('vigilar', function() {
 });
 //PRODUCCION####################################################################
 //Tarea para el servidor de Produccion Local
-gulp.task('server-produccion-local', ['comprimir']function() {
+gulp.task('server-produccion-local', ['comprimir'], function() {
    gulp.src('dist')
       .pipe(connect({
          host: hostServer,
@@ -143,14 +143,14 @@ gulp.task('server-produccion-local', ['comprimir']function() {
          livereload: false,
          fallback: 'index.html',
          proxies: [{
-            source: recurso
+            source: recurso,
             target: serverLocal
          }],
          open: true
       }));
 });
 //Tarea para el servidor de Produccion Remoto
-gulp.task('server-produccion-remoto', ['comprimir']function() {
+gulp.task('server-produccion-remoto', ['comprimir'], function() {
    gulp.src('dist')
       .pipe(connect({
          host: hostServer,
@@ -158,7 +158,7 @@ gulp.task('server-produccion-remoto', ['comprimir']function() {
          livereload: false,
          fallback: 'index.html',
          proxies: [{
-            source: recurso
+            source: recurso,
             target: serverLocal
          }],
          open: true

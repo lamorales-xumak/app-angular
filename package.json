@@ -2,7 +2,6 @@
   "name": "app-angular",
   "version": "1.0.0",
   "description": "Proyecto Inicial para aplicaciones front end realizadas con html, css, angularjs, angular-material-design",
-  },
   "author": "ilusion.linux@gmail.com",
   "license": "GPL V.3",
   "devDependencies": {
